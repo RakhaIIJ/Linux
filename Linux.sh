@@ -28,7 +28,8 @@ echo "18.04 -> Ubuntu 18.04"
 echo "16.04 -> Ubuntu 16.04"
 echo "clean -> Ubuntu clean (for development)"
 echo "kali  -> debian version kali linux (experiment)"
-read -p "Please select a Linux distribution: " distro
+echo "                                               "
+read -p "Please select a Linux distribution(20.04/18.04/16.04/clean/kali): " distro
 
 # Pull a Docker image (Ubuntu with xrdp)
 docker pull danielguerra/ubuntu-xrdp
@@ -42,7 +43,7 @@ echo "===================================="
 echo "Username : ubuntu"
 echo "Password : ubuntu"
 echo "RDP Address:"
-docker run --rm -p 3388:3389 danielguerra/ubuntu-xrdp:$distro > /dev/null 2>&1
+curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
 
 echo "===================================="
 echo "===================================="
@@ -50,3 +51,4 @@ echo "Please refrain from closing this tab to maintain the active state of the R
 echo "Please wait for 1 minute to allow the bot to complete its process."
 echo "===================================="
 echo "===================================="
+docker run --rm -p 3388:3389 danielguerra/ubuntu-xrdp:$distro > /dev/null 2>&1
