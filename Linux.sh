@@ -9,9 +9,9 @@ echo "======================="
 echo choose linux distro
 echo "======================="
 echo "kali - Kali Linux"
+echo "20.10 - Ubuntu 18.04"
 echo "18.04 - Ubuntu 18.04"
 echo "16.04 - Ubuntu 16.04"
-echo "20.10 - Ubuntu 18.04"
 read -p "choose linux distro: " distro
 echo "===================================="
 echo "Install RDP"
