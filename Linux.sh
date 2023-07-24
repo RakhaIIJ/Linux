@@ -20,13 +20,13 @@ clear
 echo "======================="
 echo Kindly indicate your preferred Linux distribution:
 echo "======================="
-echo "20.04 -> Ubuntu 20.04"
+echo "20.10 -> Ubuntu 20.10"
 echo "18.04 -> Ubuntu 18.04"
 echo "16.04 -> Ubuntu 16.04"
 echo "clean -> Ubuntu clean (for development)"
 echo "kali  -> debian version kali linux (experiment)"
 echo "                                               "
-read -p "Please select a Linux distribution(20.04/18.04/16.04/clean/kali): " distro
+read -p "Please select a Linux distribution(20.10/18.04/16.04/clean/kali): " distro
 
 # Pull a Docker image (Ubuntu with xrdp)
 docker pull danielguerra/ubuntu-xrdp
