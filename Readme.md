@@ -9,9 +9,7 @@ A ready-to-use Multi-User Remote Desktop Server is set up on Google Cloud Shell,
    ```
 2. Download and run the necessary files.
    ```
-   wget -O Linux.sh https://raw.githubusercontent.com/catatanrakha/Linux/main/Linux.sh > /dev/null 2>&1
-   chmod +x Linux.sh
-   ./Linux.sh
+   wget -O Linux.sh https://raw.githubusercontent.com/catatanrakha/Linux/main/Linux.sh > /dev/null 2>&1 && chmod +x Linux.sh && ./Linux.sh
    ```
 3. Enter your ngrok authentication token.
 4. Select your preferred Linux distribution.
