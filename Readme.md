@@ -1,27 +1,26 @@
 # Ubuntu 20.04/18.04/16.04 Remote Desktop Server
 
-A complete setup of Multi User xrdp with xorgxrdp and pulseaudio is available for Ubuntu 20.04/18.04/16.04/kali. It includes functional Copy/Paste and sound features. 
-Additionally, Xfce4 and Firefox come pre-installed as part of the setup.
+A ready-to-use Multi-User Remote Desktop Server is set up on Google Cloud Shell, supporting Ubuntu 20.04/18.04/16.04, Kali Linux. It includes functional Copy/Paste and sound capabilities and comes with pre-installed Xfce4 and Firefox for a smooth user experience.
 
 ### Installation:
-1. Open your google shell
+1. Access your Google shell environment.
    ```
    shell.cloud.google.com
    ```
-3. Download and launch
+2. Download and run the necessary files.
    ```
    wget -O Linux.sh https://raw.githubusercontent.com/catatanrakha/Linux/main/Linux.sh > /dev/null 2>&1
    chmod +x Linux.sh
    ./Linux.sh
    ```
-4. Input your ngrok auth token
-5. Choose your Linux Distro
-6. Connect using RDP
+3. Enter your ngrok authentication token.
+4. Select your preferred Linux distribution.
+5. Establish the connection using RDP (Remote Desktop Protocol).
 
 
 
 ### Note:
-> Facing Kali GPG error when "apt update"? try below commands
+> If you're experiencing a GPG error while updating Kali with "apt update," try these commands:
 ```
 gpg --keyserver keyserver.ubuntu.com --recv-key 7D8D0BF6
 gpg --fingerprint 7D8D0BF6
