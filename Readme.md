@@ -1,6 +1,6 @@
-# Ubuntu 20.04/18.04/16.04 Remote Desktop Server
+# Ubuntu 20.10/18.04/16.04 Remote Desktop Server
 
-A ready-to-use Multi-User Remote Desktop Server is set up on Google Cloud Shell, supporting Ubuntu 20.04/18.04/16.04, Kali Linux. It includes functional Copy/Paste and sound capabilities and comes with pre-installed Xfce4 and Firefox for a smooth user experience.
+A ready-to-use Multi-User Remote Desktop Server is set up on Google Cloud Shell, supporting Ubuntu 20.10/18.04/16.04, Kali Linux. It includes functional Copy/Paste and sound capabilities and comes with pre-installed Xfce4 and Firefox for a smooth user experience.
 
 ### Installation:
 1. Access your Google shell environment.
