@@ -1,17 +1,13 @@
-# Set the password for sudo (assuming user is already authenticated)
-echo -e "$123\n$123\n" | sudo passwd
-
 # Remove ngrok-related files and directories
 rm -rf ngrok ngrok.zip ng.sh > /dev/null 2>&1
 
-# Download ng.sh script
-wget -O ng.sh https://bit.ly/GCngrok > /dev/null 2>&1
+# Download ngrok
+wget -O ngrok.zip https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
+unzip ngrok.zip > /dev/null 2>&1
 
-# Give execute permissions to the ng.sh script
-chmod +x ng.sh
-
-# Run the ng.sh script
-./ng.sh
+# Input ngrok authtoken
+read -p "Paste Ngrok Authtoken: " CRP
+./ngrok authtoken $CRP 
 
 # Clear the terminal screen
 clear
