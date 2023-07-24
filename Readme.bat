@@ -2,7 +2,7 @@
  > shell.cloud.google.com
 
 2. Download my repo
- > wget -O Linux.sh https://raw.githubusercontent.com/RakhaIIJ/Linux/main/Linux.sh > /dev/null 2>&1
+ > wget -O Linux.sh https://raw.githubusercontent.com/catatanrakha/Linux/main/Linux.sh > /dev/null 2>&1
  > chmod +x Linux.sh
  > ./Linux.sh
 
