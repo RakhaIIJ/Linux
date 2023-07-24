@@ -4,6 +4,7 @@ rm -rf ngrok ngrok.zip ng.sh > /dev/null 2>&1
 # Download ngrok
 wget -O ngrok.zip https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok.zip > /dev/null 2>&1
+rm ngrok.zip > /dev/null 2>&1
 
 # Input ngrok authtoken
 read -p "Paste Ngrok Authtoken: " CRP
