@@ -32,4 +32,4 @@ apt update
 
 ## Attribution
 - Credit to Original Author: danielguerra
-- Source: https://hub.docker.com/u/danielguerra)https://hub.docker.com/u/danielguerra
+- Source: https://hub.docker.com/u/danielguerra
