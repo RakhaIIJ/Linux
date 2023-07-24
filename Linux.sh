@@ -16,7 +16,7 @@ chmod +x ng.sh
 # Clear the terminal screen
 clear
 
-# Run ngrok in TCP mode with the specified region (ap = Asia Pacific) and port, running in the background
+# Run ngrok in TCP mode with the specified region: Asia/Pacific and port, running in the background
 ./ngrok tcp --region ap 3388 &>/dev/null &
 
 # Display a menu to choose a Linux distro
